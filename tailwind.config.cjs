@@ -11,7 +11,10 @@ module.exports = {
       backgroundImage: {
         'back': "url('./src/assets/images/bg.jpg')",
         'skills': "url('./src/assets/images/banner-bg.png')"
-      }
+      },
+      fontFamily: {
+        sans: ["Roboto Mono", "monospace"],
+      },
     },
   },
   plugins: [],

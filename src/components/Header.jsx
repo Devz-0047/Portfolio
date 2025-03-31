@@ -17,16 +17,13 @@ function Header() {
         <Navbar />
         <div className="wrapper flex justify-between items-center h-screen w-full px-20 lg:justify-center lg:px-6">
           <div className="content lg:text-center">
-            <div className="btn py-3">
-              <button className=" border-2 border-[#b0aaaa] font-bold text-white bg-[linear-gradient(90deg,#b004b0,#38097a)] p-4 rounded-2xl">
-                Welcome to my Portfolio
-              </button>
-            </div>
-            <h1 className="text-white text-5xl font-bold">Hi! I'm Devender</h1>
-            <p className="text-white py-4 max-w-lg ">
+          
+           
+            <h1 className="text-white text-6xl font-bold">Hi! I'm Devender</h1>
+            <p className="text-white py-4 max-w-lg text-xl font-semibold">
             I am a passionate Full Stack Developer with a strong focus on building interactive, responsive, and user-centric web applications. Proficient in React.js, Next.js, Redux Toolkit, and modern frontend technologies, I thrive on creating seamless digital experiences that enhance user engagement.
             </p>
-            <button className="  text-white text-2xl">
+            <button className="  text-white text-3xl font-semibold">
               <AnchorLink href="#contact">Let's Connect</AnchorLink>        
             </button>
           </div>
