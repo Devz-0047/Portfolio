@@ -5,12 +5,12 @@ import img from "../assets/images/contact-img.svg";
 function Contact() {
   const form = useRef();
   const [successMessage, setSuccessMessage] = useState("");
-  const [loading, setLoading] = useState(false); // ✅ Track loading state
+  const [loading, setLoading] = useState(false); // 
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    setLoading(true); // ✅ Disable button & show spinner
+    setLoading(true); // 
 
     const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
     const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
@@ -20,12 +20,12 @@ function Contact() {
       .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then(
         (result) => {
-          console.log("Email sent!", result.text);
+          
           setSuccessMessage("Your message has been sent successfully!");
           form.current.reset();
         },
         (error) => {
-          console.log("Error sending email:", error.message);
+          
           setSuccessMessage("Failed to send message. Please try again.");
         }
       )
@@ -84,10 +84,10 @@ function Contact() {
                 required
               ></textarea>
               
-              {/* ✅ Button with Spinner */}
+            
               <button
                 type="submit"
-                disabled={loading} // ✅ Disable when loading
+                disabled={loading} 
                 className={`bg-white border-black border-[1px] py-[16px] rounded-lg px-8 my-8 w-32 font-bold flex items-center justify-center ${
                   loading ? "opacity-50 cursor-not-allowed" : ""
                 }`}
